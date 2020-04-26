@@ -1,0 +1,513 @@
+/* Каркас страниц */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #cbcbcb;
+    /*background-image: url(../image/bg-lines.png);
+    background-size: 100%;*/
+    font-family: 'UralPro Bold', 'Courier New', Courier, monospace;
+    /*font-weight: 800;*/
+}
+
+.wrapper {
+    width: 1280px;
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.company {
+    display: inline-block;
+}
+.company-url {
+    display: inline-block;
+    font-family: 'UralProExpanded Heavy';
+    padding: 15px;
+    text-decoration: none;
+    color: #2e3136;
+}
+.company-url:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    float:right;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.social-links div {
+    float: left;
+    padding-left: 10px;
+    margin: 9px 0px 0px 0px;
+}
+.social-links div a {
+    float:left;
+    border-radius: 2px;
+}
+
+/* Шапка */
+header {
+    /*background-color: whitesmoke;*/
+    background: linear-gradient(to bottom, #999999, rgb(250, 242, 220));
+    height: 114px;
+    padding: 15px;
+    padding-top: 30px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /*text-transform: uppercase;*/
+    /*font-family: 'UralProExpanded Heavy';*/
+}
+
+.logo {
+    position: absolute;
+    width: 150px;
+}
+
+h1.title {
+    text-align: center;
+    line-height: 54px;
+    color: #2e3136;
+}
+ /* Меню под шапкой */
+nav {
+    background: transparent;
+    height: 80px;
+    padding: 12px 110px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    padding: 10px 10px;
+    margin: 10px 16px;
+    box-sizing: border-box;   /*---------------------*/
+    position: relative;
+    color: white;
+    border: 1px solid rgba(255,255,255,.4);
+    background: #2e3136;
+    font-weight: 300;
+    font-family: 'UralPro Regular';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /*white-space: nowrap; /**----------------------***/
+    font-size: small;
+    border-radius: 5px;
+  }
+.btn:before,
+.btn:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+.btn:before {
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+
+  }
+.btn:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+    
+  }
+.btn:hover:before,
+.btn:hover:after{
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+  }
+.btn:hover:before {transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;}
+.btn:hover:after {transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;}
+.btn:hover {background: rgba(255,255,255,.2); background-color: orangered;}
+
+
+/* Главное содержимое страницы */
+main {
+    background-color:whitesmoke;
+    flex-grow: 1;
+    border-radius: 5px;  
+}
+/* aside со ссылками */
+aside {
+    padding: 15px;
+    margin: 0 auto;
+}
+aside a {
+    color: rgb(92, 91, 91);
+    text-decoration: none;
+}
+aside a:hover {
+    color: #2e3136;
+    text-decoration: underline;
+}
+/* Футер */
+footer {
+    background: linear-gradient(to bottom, rgb(250, 242, 220), #444444);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.banner {
+    display: block;
+    padding-top: 15px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    width: 380px;
+    margin: 0 auto;
+}
+
+.copyright {
+    display: inline;
+    color: white;
+    margin-left: 15px;
+    position: relative;
+    bottom: 5px;
+    font-family: 'UralPro Bold';
+    color: whitesmoke;
+}
+
+/* Кнопка наверх */
+#toTop {
+    width:100px;
+    /*border:1px solid #ccc;*/
+    background:transparent;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:10px; /* отступ кнопки от нижнего края страницы*/
+    right:0;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-family:verdana;
+    font-size:11px;
+}
+/* Конец каркаса страниц */
+
+
+/* Страница index.html */
+.index {
+    background: transparent;
+}
+.slider {
+    min-height: 400px;
+    width: 1000px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+}
+.slider .lSSlideWrapper, .slider img {
+    height: 400px;
+}
+
+/* Страница working_time.html */
+.working_time {
+    font-family: 'ProximaNova Regular', Arial, sans-serif;
+    line-height: 2em;
+    display: flex;
+    flex-direction: row;
+}
+.working_time div {
+    display: inline-block;
+    flex-grow: 1;
+}
+.working_time h3 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.working_time p {
+    padding-left: 180px;
+}
+
+
+/* Страница location.html */
+.location {
+    font-family:'ProximaNova Regular', Arial, sans-serif;
+    line-height: 1.5em;
+    padding: 20px 140px;
+}
+.location h2 {
+    text-align: center;
+}
+.location h3 {
+    margin-top: 30px;
+}
+.location ul {
+    display: block;
+}
+.location .transport {
+    list-style: disc;
+    margin-left: 1em;
+}
+
+
+/* Страница prices.html */
+.prices {
+    font-family:'ProximaNova Regular', Arial, sans-serif;
+    padding:20px 140px;
+}
+.right-menu {
+    font-family: 'UralPro Bold';
+}
+.prices .right-menu {
+    max-width: 300px;
+    float: right;
+}
+.price > table {
+    margin: 0 auto;
+    width: 1000px;  
+}
+.price th {
+    text-align: left;
+    padding-left: 10px;
+}
+.price th:first-child {
+    width: 50px;
+}
+.price th:nth-child(2n) {
+    width: 800px;
+}
+.price th:last-child {
+    text-align: center;
+}
+.price tr td {
+    padding-left: 10px;
+}
+.price tr td:last-child {
+    text-align: right;
+}
+.price tr td:last-child:after {
+    content: ".00 руб.";
+}
+.price-title {
+    background: rgb(100, 100, 100) url("../image/al.png") no-repeat right;
+    text-align: left;
+    color:white;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.price-title.active, .price-title:hover {
+    background-color: orangered;
+}
+.price-title.active {
+    background: orangered url("../image/ad.png") no-repeat right;
+}
+.price tr:hover {
+    background: rgb(200,200,200);
+}
+
+
+/* Страница prices-doc.html */
+.prices-doc {
+    font-family:'ProximaNova Regular', Arial, sans-serif;
+    padding:20px 140px;
+    line-height: 2em;
+}
+.prices-doc .right-menu {
+    max-width: 300px;
+    float: right;
+}
+
+
+/* Страница info.html*/
+.info {
+    font-family: Arial, sans-serif;
+    line-height: 2em;
+    padding: 20px 140px;
+}
+.info h2 {
+    font-family: 'ProximaNova Regular', Arial, sans-serif;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+
+/* Страница comments.html */
+.comment-form {
+    /*font-family: 'ProximaNova Regular', Arial, sans-serif;*/
+    width: 500px;
+    margin: 20px auto;
+    /*border: 1px solid #44567e;*/
+    /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);  */
+}
+.comment-form h2 {
+    font-family: 'ProximaNova Regular', Arial, sans-serif;
+}
+.comment-form .row {
+    /*overflow: hidden;*/
+    margin: 1em;
+}
+.comment-form label {
+    /*color: #8dacfe;*/
+    width: 100px;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+.comment-form input, textarea {
+    /*background: #182a50;*/
+    /*box-shadow: inset -2px -2px 2px #425575;*/
+    width: 300px;
+    /*border: none;*/
+    /*color: #fff;*/
+    padding: 5px;
+    border-color: #999999;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.comment-form textarea {
+    height: 50px;
+}
+.comment-form .button {
+    margin-left: 110px;
+    background: #999999;
+    /*border: none;*/
+    /*color: #6d82bb;*/
+    padding: 10px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;  
+}
+.comment-form input:focus, .comment-form textarea:focus, .comment-form .button:hover {
+    box-shadow:  0 0 1px 1px orangered;
+}
+
+
+/* Страница med_personal.html */
+.med-personal {
+    font-family:'ProximaNova Regular', Arial, sans-serif;
+    padding: 20px 15px;
+}
+.med-personal > h2 {
+    margin-bottom: 15px;
+    padding: 0 140px;
+}
+.person > table {
+    margin: 15 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    box-sizing:border-box ;
+}
+
+.person th {
+    text-align: left;
+}
+.person th:first-child {
+    width: 25px;
+}
+.person th:nth-child(2n) {
+    width: 150px;
+}
+.person th:nth-child(3n) {
+    width: 200px;
+}
+.person th:nth-child(4n) {
+    width: 165px;
+}
+
+.person th, .person td {
+    border: 1px solid black;
+    padding: 10px; 
+}
+.person thead th {
+    padding-top:10px;
+}
+
+.person-title {
+    background: rgb(100, 100, 100) url("../image/al.png") no-repeat right;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.person-title.active, .person-title:hover {
+    background-color: orangered;
+}
+.person-title.active {
+    background: orangered url("../image/ad.png") no-repeat right;}
+
+.person tr:hover {
+    background: rgb(200,200,200);
+}
+
+/* Страница contacts.html */
+.contacts {
+    font-family: 'ProximaNova Regular', Arial, sans-serif;
+    line-height: 1.5em;
+    padding: 20px 140px;
+}
+
+/* Страница job.html */
+.job {
+    font-family: 'ProximaNova Regular', Arial, sans-serif;
+    line-height: 2em;
+    padding: 20px 140px;
+}
+.job h2, .job h3 {
+    margin-bottom: 15px;
+}
+.job ul {
+    display: block;
+    margin-bottom: 15px;
+    
+}
+.job li {
+    list-style: disc;
+    margin-left: 1em;
+    line-height: 1.5em;
+}
+
+/* Страница sitemap.html */
+.sitemap {
+    font-family: 'UralPro Bold';
+    line-height: 1.5em;
+    padding: 20px 140px;
+}
+
+.sitemap h2 {
+    font-family: 'ProximaNova Regular', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.sitemap p > a {
+    color: rgb(92, 91, 91);
+    text-decoration: none;
+}
+.sitemap p > a:hover {
+    color: #2e3136;
+    text-decoration: underline;
+}

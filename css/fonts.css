@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "UralPro Bold";
+    src: url("fonts/ural_bold_wide_pro.woff2") format("woff2"), url("fonts/ural_bold_wide_pro.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "UralProExpanded ExtraBold";
+    src: url("fonts/UralProExpanded-ExtraBold.woff2") format("woff2"), url("fonts/UralProExpanded-ExtraBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+font-family: "UralProExpanded Heavy";
+src: url("fonts/UralProExpanded-Heavy.woff2") format("woff2"), url("fonts/UralProExpanded-Heavy.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "UralPro Regular";
+src: url("fonts/UralPro-Regular.woff2") format("woff2"), url("fonts/UralPro-Regular.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+    font-family: "UVZ Regular";
+    src: url("fonts/uvz_0.woff2") format("woff2"), url("fonts/uvz_0.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+font-family: "ProximaNova Bold";
+src: url("fonts/proximanova-bold.woff2") format("woff2"), url("fonts/proximanova-bold.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "ProximaNova Semibold";
+src: url("fonts/proximanova-semibold.woff2") format("woff2"), url("fonts/proximanova-semibold.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "ProximaNova Regular";
+src: url("fonts/proximanova-reg.woff2") format("woff2"), url("fonts/proximanova-reg.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "GothamPro Medium";
+src: url("fonts/GothamProMedium.woff2") format("woff2"), url("fonts/GothamProMedium.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: "Charter Italic";
+src: url("fonts/charter-italic.woff2") format("woff2"), url("fonts/charter-italic.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
